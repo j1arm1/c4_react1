@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+//import lorem from './img/lorem-ipsum.png';
+import NavBar from './components/NavBar';
+import Proyectlist from './components/Proyectlist';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <NavBar/>
+      <Proyectlist/>
+      <Footer/>
+      
+      
+      </div>
+
   );
 }
 
