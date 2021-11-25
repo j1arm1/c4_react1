@@ -1,6 +1,6 @@
 function NavBar() {
     return (
-        <div className="container">
+        
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@ function NavBar() {
                     </div>
                 </div>
             </nav>
-        </div>
+        
     );
 }
 export default NavBar;

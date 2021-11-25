@@ -1,10 +1,9 @@
 import Proyeclistitem from "./Proyectlistitem";
-import mision from "./static/img/mision.png";
+import mision from "./static/img/mision3.jpg";
 import mision2 from "./static/img/mision2.png"
 import uninorte from "./static/img/uninorte.png"
 function Proyectlist() {
     return (
-        <div className="container">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -42,7 +41,7 @@ function Proyectlist() {
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        </div>
+    
 
     );
 }

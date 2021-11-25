@@ -1,6 +1,5 @@
 function Footer() {
     return (
-        <div className="container">
             <footer className="bg-dark text-white mt-3">
                 <div className="container">
                     <div className="card bg-dark">
@@ -15,7 +14,6 @@ function Footer() {
                     </div>
                 </div>
             </footer >
-        </div>
 
     );
 }
