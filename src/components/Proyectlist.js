@@ -1,6 +1,5 @@
 import ProyectText from "./ProyectText";
 import mision from "./static/img/mision3.jpg";
-import mision2 from "./static/img/mision2.png"
 import uninorte from "./static/img/uninorte.png"
 function Proyectlist() {
     return (

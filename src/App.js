@@ -96,7 +96,7 @@ function App() {
 
       
         <NavBar onOptionClicked={onOptionClicked} />
-          <Proyectlist />
+        
           <Container>
           <div className="card mt-5">
             <div className="card-body">

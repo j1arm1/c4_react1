@@ -1,8 +1,10 @@
-import { Navbar, NavDropdown, Container, Nav } from 'react-bootstrap';
+import { Navbar, NavDropdown, Container, Nav, Form, Button } from 'react-bootstrap';
 
 const menu = [
-    { id: "1", item: "Proyectos", subitems:
-        { id: "1.1", item: "Agregar"
+    {
+        id: "1", item: "Proyectos", subitems:
+        {
+            id: "1.1", item: "Agregar"
         }
     }
 ]
@@ -21,6 +23,7 @@ const NavBar = function ({ onOptionClicked }) {
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="none">Home</a>
                         </li>
+                      
                         <Container fluid>
                             <Navbar.Collapse >
                                 <Nav className="me-auto">
@@ -31,8 +34,6 @@ const NavBar = function ({ onOptionClicked }) {
                                             <NavDropdown.Item href="#AgregarProyectos" name="AgregarP" onClick={onOptionClicked}>Agregar </NavDropdown.Item>
                                             <NavDropdown.Item href="#ModificarProyectos" name="ModificarP" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
                                         </NavDropdown>
-                                     
-
 
                                         <NavDropdown className="bg-dark" title="Actividades" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#AgregarProyectos" name="AgregarPro" onClick={onOptionClicked}>Agregar</NavDropdown.Item>
@@ -70,6 +71,8 @@ const NavBar = function ({ onOptionClicked }) {
                             </Navbar.Collapse>
                         </Container>
                     </ul>
+                    <Nav.Link href="#Anterior">Anterior</Nav.Link>
+                                  <Nav.Link href="#Inicio">Inicio</Nav.Link>
                     <form className="d-flex">
                         <button className="btn btn-outline-light" type="submit">Login</button>
                     </form>

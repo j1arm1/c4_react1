@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 
 import NavBar from "./NavBar";
 import Footer from "./Footer";

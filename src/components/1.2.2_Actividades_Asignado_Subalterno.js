@@ -1,4 +1,5 @@
-import { Fragment } from "react";
+/* eslint-disable jsx-a11y/heading-has-content */
+
 import ActividadesList from "./ActividadesList";
 import Paginator from "./Paginator";
 
