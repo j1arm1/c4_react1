@@ -29,12 +29,18 @@ const NavBar = function ({ onOptionClicked }) {
                                 <Nav className="me-auto">
                                 </Nav>
                                 <Nav>
-                                    <NavDropdown title="Menu" align="right" id="basic-nav-dropdown">
+                                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container-fluid">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
                                         <NavDropdown className="bg-dark" title="Proyectos" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#AgregarProyectos" name="AgregarP" onClick={onOptionClicked}>Agregar </NavDropdown.Item>
                                             <NavDropdown.Item href="#ModificarProyectos" name="ModificarP" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
                                         </NavDropdown>
-
+                                                                          
+                                
                                         <NavDropdown className="bg-dark" title="Actividades" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#AgregarProyectos" name="AgregarPro" onClick={onOptionClicked}>Agregar</NavDropdown.Item>
                                             <NavDropdown.Item href="#ModificarProyectos" name="ModificarPro" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
@@ -66,7 +72,8 @@ const NavBar = function ({ onOptionClicked }) {
                                         <NavDropdown.Divider />
 
                                         <NavDropdown.Item className="bg-dark text-secondary" href="#ModificarDatos" name="MDatos" onClick={onOptionClicked}>Modificar Datos</NavDropdown.Item>
-                                    </NavDropdown>
+                                        </div>
+                                        </nav>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
