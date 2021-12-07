@@ -71,14 +71,9 @@ const NavBar = function ({ onOptionClicked }) {
 
                                         <NavDropdown.Divider />
 
-<<<<<<< HEAD
-                                        <NavDropdown.Item className="bg-primary text-secondary" href="#ModificarDatos" name="MDatos" onClick={onOptionClicked}>Modificar Datos</NavDropdown.Item>
-                                    </NavDropdown>
-=======
                                         <NavDropdown.Item className="bg-dark text-secondary" href="#ModificarDatos" name="MDatos" onClick={onOptionClicked}>Modificar Datos</NavDropdown.Item>
                                         </div>
                                         </nav>
->>>>>>> 7ff1d76206a8a6ec8326674d41283d84e82076e0
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
