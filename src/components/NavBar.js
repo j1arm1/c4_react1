@@ -10,7 +10,7 @@ const menu = [
 const NavBar = function ({ onOptionClicked }) {
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className="container-fluid">
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -27,19 +27,19 @@ const NavBar = function ({ onOptionClicked }) {
                                 </Nav>
                                 <Nav>
                                     <NavDropdown title="Menu" align="right" id="basic-nav-dropdown">
-                                        <NavDropdown className="bg-dark" title="Proyectos" align="end" id="basic-nav-dropdown"  >
+                                        <NavDropdown className="bg-primary" title="Proyectos" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#AgregarProyectos" name="AgregarP" onClick={onOptionClicked}>Agregar </NavDropdown.Item>
                                             <NavDropdown.Item href="#ModificarProyectos" name="ModificarP" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
                                         </NavDropdown>
                                      
 
 
-                                        <NavDropdown className="bg-dark" title="Actividades" align="end" id="basic-nav-dropdown"  >
+                                        <NavDropdown className="bg-primary" title="Actividades" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#AgregarProyectos" name="AgregarPro" onClick={onOptionClicked}>Agregar</NavDropdown.Item>
                                             <NavDropdown.Item href="#ModificarProyectos" name="ModificarPro" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
                                         </NavDropdown>
 
-                                        <NavDropdown className="bg-dark" title="Informes" align="end" id="basic-nav-dropdown"  >
+                                        <NavDropdown className="bg-primary" title="Informes" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#ProyectosTerminados" name="Terminados" onClick={onOptionClicked}>Proyectos Terminados</NavDropdown.Item>
                                             <NavDropdown.Item href="#ProyectosIniciados" name="Iniciados" onClick={onOptionClicked}>Proyectos Iniciados</NavDropdown.Item>
                                             <NavDropdown.Item href="#HorasProyecto" name="HorasP" onClick={onOptionClicked}>Horas Por Proyecto</NavDropdown.Item>
@@ -48,14 +48,14 @@ const NavBar = function ({ onOptionClicked }) {
 
                                         <NavDropdown.Divider />
 
-                                        <NavDropdown className="bg-dark" title="Usuario Administrador" align="end" id="basic-nav-dropdown"  >
+                                        <NavDropdown className="bg-primary" title="Usuario Administrador" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#CrudUsuarios" name="CrudUsuarios" onClick={onOptionClicked}>Crud Usuarios</NavDropdown.Item>
                                             <NavDropdown.Item href="#AgregarUsuarios" name="AgregarU" onClick={onOptionClicked}>Agregar Usuarios</NavDropdown.Item>
                                             <NavDropdown.Item href="#ModificarUsuarios" name="ModificarU" onClick={onOptionClicked}>Modificar Usuarios</NavDropdown.Item>
 
                                         </NavDropdown>
 
-                                        <NavDropdown className="bg-dark" title="Usuario Subalterno" align="end" id="basic-nav-dropdown"  >
+                                        <NavDropdown className="bg-primary" title="Usuario Subalterno" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#ProyectosAsignados" name="Asignados" onClick={onOptionClicked}>Proyectos Asigandos</NavDropdown.Item>
                                             <NavDropdown.Item href="#ActividadesAsignadas" name="AAsignadas" onClick={onOptionClicked}>Actividades de un Proyecto Asignadas</NavDropdown.Item>
                                             <NavDropdown.Item href="#CargarHoras" name="CHoras" onClick={onOptionClicked}>Cargar Horas Actividad</NavDropdown.Item>
@@ -64,7 +64,7 @@ const NavBar = function ({ onOptionClicked }) {
 
                                         <NavDropdown.Divider />
 
-                                        <NavDropdown.Item className="bg-dark text-secondary" href="#ModificarDatos" name="MDatos" onClick={onOptionClicked}>Modificar Datos</NavDropdown.Item>
+                                        <NavDropdown.Item className="bg-primary text-secondary" href="#ModificarDatos" name="MDatos" onClick={onOptionClicked}>Modificar Datos</NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav>
                             </Navbar.Collapse>

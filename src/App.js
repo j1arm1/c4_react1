@@ -3,6 +3,8 @@ import NavBar from './components/NavBar';
 import { useState } from 'react';
 import { Container } from 'react-bootstrap';
 
+import './bootstrap.css';
+
 import Proyectlist from './components/Proyectlist';
 import ProyectText from './components/ProyectText';
 import Footer from './components/Footer';
@@ -24,6 +26,7 @@ import ActividadesSubalterno from './components/1.2.2_Actividades_Asignado_Subal
 import HorasActividad from './components/1.2.3_Cargar_Horas';
 import EstadoActividad from './components/1.2.4_Cargar_Estado';
 import menu_informe from './components/1.1.2_Menu_Informes';
+import UsuarioSubalterno from './components/1.2_Opciones_Usuario_Subalterno';
 
 
 function App() {
@@ -80,7 +83,7 @@ function App() {
     <div>
 
       
-        <NavBar onOptionClicked={onOptionClicked} />
+          <NavBar onOptionClicked={onOptionClicked} />
           <Proyectlist />
           <Container>
           <div className="card mt-5">
@@ -90,6 +93,7 @@ function App() {
           </div>
           </Container>
           {/* <ProyectText /> */}
+          <UsuarioSubalterno/>
           <Footer />
         
      
