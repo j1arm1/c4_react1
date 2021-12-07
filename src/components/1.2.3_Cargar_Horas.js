@@ -1,6 +1,5 @@
 
 import { Container, Form, Row, Image, Col } from "react";
-import mision from "./static/img/mision.png";
 
 const HorasActividad = function () {
 
