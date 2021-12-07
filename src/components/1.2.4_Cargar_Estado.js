@@ -13,6 +13,11 @@ const EstadoActividad = function (props) {
             </div>
             <div class="card mt-5">
                 <div class="row g-1">
+                <div class="col-md-15 mt-4">
+                    <div class="text-center">
+                        <img src={mision} class="rounded mx-auto d-block" alt="Slide" />
+                    </div>
+                </div>
                     <div class="col-md-10">
                         <div class="card-body">
                             <form>
@@ -42,15 +47,15 @@ const EstadoActividad = function (props) {
                                     <label for="Proyecto Asignado" class="col-4 col-form-label">Escoja Estado de la actividad</label>
                                     <div class="col-sm-4">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                                            <label class ="form-check-label" for="flexRadioDefault1">
-                                            Iniciada
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Iniciada
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-                                            <label class ="form-check-label" for="flexRadioDefault2">
-                                            Completada
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Completada
                                             </label>
                                         </div>
                                     </div>
@@ -64,12 +69,7 @@ const EstadoActividad = function (props) {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-10">
-                    <div class="text-center">
-                        <img src="mision2" class="rounded mx-auto d-block" alt="...">
-                        </img>
-                    </div>
-                </div>
+               
             </div>
         </div>
     );
