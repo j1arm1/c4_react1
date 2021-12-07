@@ -1,4 +1,4 @@
-function Proyeclistitem() {
+function ProyectText() {
     return (
         <div className="container">
             <div className="card mb-4 mt-4 col-md-12">
@@ -78,4 +78,4 @@ function Proyeclistitem() {
     );
 
 }
-export default Proyeclistitem;
+export default ProyectText;

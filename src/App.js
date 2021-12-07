@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Container } from 'react-bootstrap';
 
 import Proyectlist from './components/Proyectlist';
-import ProyectlistCard from './components/Proyectlistitem';
+import ProyectText from './components/ProyectText';
 import Footer from './components/Footer';
 import './App.css';
 import AgregarActividades from './components/Actividades';
@@ -23,6 +23,7 @@ import ProyectosSubalterno from './components/1.2.1_Proyectos_Asigandos_Subalter
 import ActividadesSubalterno from './components/1.2.2_Actividades_Asignado_Subalterno';
 import HorasActividad from './components/1.2.3_Cargar_Horas';
 import EstadoActividad from './components/1.2.4_Cargar_Estado';
+import menu_informe from './components/1.1.2_Menu_Informes';
 
 
 function App() {
@@ -62,7 +63,10 @@ function App() {
                       else {
                         if (evt.target.name === "CEstado") { setCompDinamico(<EstadoActividad/>); }
                         else {
-          setCompDinamico(<Modificardatos />);
+                          if (evt.target.name === "MDatos") {setCompDinamico(<Modificardatos />);}
+                          else {
+                            setCompDinamico (<menu_informe />);
+                          }
         }
       }
     }
@@ -77,16 +81,15 @@ function App() {
 
       
         <NavBar onOptionClicked={onOptionClicked} />
-        
-        <Container>
+          <Proyectlist />
+          <Container>
           <div className="card mt-5">
             <div className="card-body">
               {compDinamico}
             </div>
           </div>
           </Container>
-          <Proyectlist />
-          <ProyectlistCard />
+          {/* <ProyectText /> */}
           <Footer />
         
      

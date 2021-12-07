@@ -1,5 +1,12 @@
 import { Navbar, NavDropdown, Container, Nav } from 'react-bootstrap';
 
+const menu = [
+    { id: "1", item: "Proyectos", subitems:
+        { id: "1.1", item: "Agregar"
+        }
+    }
+]
+
 const NavBar = function ({ onOptionClicked }) {
 
     return (
