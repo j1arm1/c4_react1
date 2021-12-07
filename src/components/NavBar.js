@@ -29,19 +29,19 @@ const NavBar = function ({ onOptionClicked }) {
                                 <Nav className="me-auto">
                                 </Nav>
                                 <Nav>
-                                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className="container-fluid">
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                                        <NavDropdown className="bg-dark" title="Proyectos" align="end" id="basic-nav-dropdown"  >
+                                        <NavDropdown className="bg-primary" title="Proyectos" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#AgregarProyectos" name="AgregarP" onClick={onOptionClicked}>Agregar </NavDropdown.Item>
                                             <NavDropdown.Item href="#ModificarProyectos" name="ModificarP" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
                                         </NavDropdown>
                                                                           
                                 
-                                        <NavDropdown className="bg-dark" title="Actividades" align="end" id="basic-nav-dropdown"  >
+                                        <NavDropdown className="bg-primary" title="Actividades" align="end" id="basic-nav-dropdown"  >
                                             <NavDropdown.Item href="#AgregarProyectos" name="AgregarPro" onClick={onOptionClicked}>Agregar</NavDropdown.Item>
                                             <NavDropdown.Item href="#ModificarProyectos" name="ModificarPro" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
                                         </NavDropdown>
@@ -71,15 +71,15 @@ const NavBar = function ({ onOptionClicked }) {
 
                                         <NavDropdown.Divider />
 
-                                        <NavDropdown.Item className="bg-dark text-secondary" href="#ModificarDatos" name="MDatos" onClick={onOptionClicked}>Modificar Datos</NavDropdown.Item>
+                                        <NavDropdown.Item className="bg-primary text-white" href="#ModificarDatos" name="MDatos" onClick={onOptionClicked}>Modificar Datos</NavDropdown.Item>
                                         </div>
                                         </nav>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
                     </ul>
-                    <Nav.Link href="#Anterior">Anterior</Nav.Link>
-                                  <Nav.Link href="#Inicio">Inicio</Nav.Link>
+                    <Nav.Link className = "text-white" href="#Anterior">Anterior</Nav.Link>
+                                  <Nav.Link className = "text-white" href="#Inicio">Inicio</Nav.Link>
                     <form className="d-flex">
                         <button className="btn btn-outline-light" type="submit">Login</button>
                     </form>

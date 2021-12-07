@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import proyectos1 from "./static/img/proyectos1.png";
-import editarperfil from "./static/img/editarperfil.png";
+
 
 const UsuarioSubalterno = function (props) {
     return (
@@ -51,35 +51,10 @@ const UsuarioSubalterno = function (props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="card">
-                            <img src={editarperfil} className="card-img-top" height="250rem" alt="..."/>
-                            <div className="card-body">
-                                <button type="button" class="btn btn-primary">Editar  perfil</button>
-                                <p className="card-text">Modifica los datos de tu cuenta</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                    
+                </div>        
 
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+                    
             </div>
         </Fragment>
         
