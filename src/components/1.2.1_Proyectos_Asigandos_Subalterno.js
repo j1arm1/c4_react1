@@ -1,23 +1,37 @@
-import { Fragment } from "react";
+/* eslint-disable jsx-a11y/heading-has-content */
 
-const ProyectosSubalterno = function (props) {
+import NavBar from "./NavBar";
+import Footer from "./Footer";
+import ProyectlistItem from "./ProyectListItem";
+import Paginator from "./Paginator";
 
-    return (
-        
-            <div className="card">
-                <div class="card-header bg-primary text-white">
-                    <h1>Proyectos Asignados Subalterno</h1>
-                </div>
-                <div className="card-body">
-                    
-                    <p>
-                    Jesus 
-                    </p>
-                </div>
-            </div>
-       
-    );
 
+function ActividadesSubalterno(props) {
+
+  const vProyectos = props.proyectos;
+  const listaProyectos = vProyectos.map(p =>
+    <ProyectlistItem
+      id={p.id}
+      nombre={p.nombre}
+      descripcion={p.descripcion}
+      fecha={p.fecha}
+    />
+  );
+
+  return (
+    <div className="container">
+      <div className="card mt-lg-5">
+        <div className="card-body">
+          <h3>Proyectos Asignados al Usuario Subalterno</h3>
+          <h5 className="text-muted"></h5>
+        </div>
+      </div>
+      <div className="list-group mt-lg-5">
+        {listaProyectos}
+      </div>
+      <Paginator />
+    </div>
+  );
 }
 
-export default ProyectosSubalterno;
+export default ActividadesSubalterno;

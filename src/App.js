@@ -31,6 +31,21 @@ import UsuarioSubalterno from './components/1.2_Opciones_Usuario_Subalterno';
 
 function App() {
 
+  const lista_datos = [
+    { id:"1", nombre: "Proyecto 1", fecha: "Fecha de Inicio: 11/12/2021", descripcion: "XXXXXXXX" },
+    { id:"2", nombre: "Proyecto 2", fecha: "Fecha de Inicio: 11/12/2021", descripcion: "XXXXXXXX" },
+    { id:"3", nombre: "Proyecto N", fecha: "Fecha de Inicio: 11/12/2021", descripcion: "XXXXXXXX" },
+    
+  ];
+  const lista_actividades = [
+    { idA:"11", nombreA: "Actividad 1", fechaA: "Fecha de Inicio: 11/12/2021", descripcionA: "XXXXXXXX" },
+    { idA:"22", nombreA: "Actividad 2", fechaA: "Fecha de Inicio: 11/12/2021", descripcionA: "XXXXXXXX" },
+    { idA:"33", nombreA: "Actividad N", fechaA: "Fecha de Inicio: 11/12/2021", descripcionA: "XXXXXXXX" },
+    
+  ];
+
+
+
   const [compDinamico, setCompDinamico] = useState(<crud_proyecto />);
 
   const onOptionClicked = function (evt) {
@@ -58,9 +73,9 @@ function App() {
                 else {
                   if (evt.target.name === "ModificarU") { setCompDinamico(<ModificarUsuarios/>); }
                 else {
-                  if (evt.target.name === "Asignados") { setCompDinamico(<ProyectosSubalterno/>); }
+                  if (evt.target.name === "Asignados") { setCompDinamico(<ProyectosSubalterno proyectos={lista_datos}/>); }
                   else {
-                    if (evt.target.name === "AAsignadas") { setCompDinamico(<ActividadesSubalterno/>); }
+                    if (evt.target.name === "AAsignadas") { setCompDinamico(<ActividadesSubalterno Actividades={lista_actividades} />); }
                     else {
                       if (evt.target.name === "CHoras") { setCompDinamico(<HorasActividad/>); }
                       else {
@@ -83,8 +98,8 @@ function App() {
     <div>
 
       
-          <NavBar onOptionClicked={onOptionClicked} />
-          <Proyectlist />
+        <NavBar onOptionClicked={onOptionClicked} />
+        
           <Container>
           <div className="card mt-5">
             <div className="card-body">
